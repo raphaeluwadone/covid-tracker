@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;;
+}
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app__left {
+  flex: .9;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app__graph {
+  flex-grow: 1;
+}
+
+.app__graphTitle {
+  margin-top: 25px;
+}
+
+.table {
+  overflow-Y: scroll !important;
+  height: 400px !important;
+  margin-top: 20px;
+  color: #615d5d
+  
+}
+
+.table tr:nth-last-of-type(odd) {
+  background-color: #f3f2f8;
+  
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+  .table {
+    padding: 0 0.5rem;
+  }
+
+  .table tr{
+    display: flex;
+    justify-content: space-between;
+  }
+}
